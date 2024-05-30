@@ -89,7 +89,6 @@
         </androidx.cardview.widget.CardView>
 
 
-
         <Button
             android:id="@+id/btnSave_tumbuh"
             android:layout_width="match_parent"
@@ -98,7 +97,7 @@
             android:backgroundTint="@color/pink"
             android:onClick="simpanDataPertumbuhan"
             android:text="@string/sv_data_pertumbuhan"
-            android:textColor="@color/black" />
+            android:textColor="@color/white" />
 
     </LinearLayout>
 

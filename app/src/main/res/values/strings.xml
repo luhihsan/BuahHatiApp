@@ -60,4 +60,7 @@
     <string name="golongan_darah_anak">Golongan Darah Anak</string>
     <string name="invalid_email">Your email is invalid \n</string>
     <string name="invalid_password">Your password is less than 8 characters</string>
+    <string name="Marno_Gombloh">Marno Gombloh</string>
+    <string name="bt_add_anak">Tambah Anak</string>
+    <string name="desc_anak">26 Agustus 2005</string>
 </resources>
