@@ -60,4 +60,7 @@
     <string name="golongan_darah_anak">Golongan Darah Anak</string>
     <string name="invalid_email">Your email is invalid \n</string>
     <string name="invalid_password">Your password is less than 8 characters</string>
+    <string name="tv_hope">Semoga Si Kecil dalam keadaan sehat ya :)</string>
+    <string name="tv_riwayat">Riwayat Pertumbuhan</string>
+    <string name="tv_informasi">Informasi</string>
 </resources>
