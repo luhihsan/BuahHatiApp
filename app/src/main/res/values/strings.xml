@@ -65,4 +65,5 @@
     <string name="tv_informasi">Informasi</string>
     <string name="tgl_tumbuh">Tanggal Pertumbuhan</string>
     <string name="tv_hasil_analisis">Hasil Analisis</string>
+    <string name="tv_pantau_pertumbuhan">Pantau Pertumbuhan</string>
 </resources>
