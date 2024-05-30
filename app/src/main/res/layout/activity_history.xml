@@ -32,13 +32,13 @@
             >
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rv_profile"
+                android:id="@+id/rv_history"
                 android:layout_width="267dp"
                 android:layout_height="442dp"
                 android:paddingTop="200dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:listitem="@layout/row_item_profile" />
+                tools:listitem="@layout/row_item_history" />
 
         </LinearLayout>
 
