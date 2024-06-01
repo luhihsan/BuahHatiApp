@@ -1,15 +1,13 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.ksp)
+    alias(libs.plugins.parcelize)
 }
 
 android {
     namespace = "com.modul.buahhati"
     compileSdk = 34
-
-    buildFeatures{
-        viewBinding = true
-    }
 
     defaultConfig {
         applicationId = "com.modul.buahhati"
@@ -37,6 +35,11 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    buildFeatures{
+        viewBinding = true
+        buildConfig = true
+    }
 }
 
 dependencies {
@@ -49,5 +52,29 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    //AnyChart
     implementation("com.github.AnyChart:AnyChart-Android:1.1.5")
+
+    // Glide
+    implementation(libs.glide)
+
+    // Retrofit
+    implementation(libs.retrofit)
+    implementation(libs.converterGson)
+
+    // OkHttp3
+    implementation(libs.okhttpLoggingInterceptor)
+
+    // Lifecycle
+    implementation(libs.lifecycleRuntimeKtx)
+
+    // DataStore
+    implementation(libs.datastorePreferences)
+
+    // Coroutines
+    implementation(libs.lifecycleViewModelKtx)
+    implementation(libs.lifecycleLivedataKtx)
+    implementation(libs.coroutinesCore)
+    implementation(libs.coroutinesAndroid)
 }

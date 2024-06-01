@@ -11,9 +11,6 @@ import com.anychart.core.cartesian.series.Area
 import com.anychart.data.Set
 import com.anychart.enums.MarkerType
 import com.modul.buahhati.databinding.ActivityViewChartBinding
-import com.modul.buahhati.view.fragment.fragment_home.HomeFragment.Companion.beratBadan
-import com.modul.buahhati.view.fragment.fragment_home.HomeFragment.Companion.lingkarKepala
-import com.modul.buahhati.view.fragment.fragment_home.HomeFragment.Companion.tinggiBadan
 
 class ViewChartActivity : AppCompatActivity() {
 
@@ -109,7 +106,7 @@ class ViewChartActivity : AppCompatActivity() {
 //            benchmarkData += CustomDataEntry("23", 92.89, 80.99)
 //            benchmarkData += CustomDataEntry("24", 93.89, 81.69)
 //        }
-        
+
         val set = Set.instantiate()
         set.data(benchmarkData)
         val series1TB = set.mapAs("{ x: 'x', value: 'value' }")
