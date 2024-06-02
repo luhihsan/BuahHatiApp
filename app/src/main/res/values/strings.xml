@@ -77,4 +77,7 @@
     <string name="error_message">Error, there is something wrong</string>
     <string name="hint_lingkar_cm">Lingkar Kepala(cm)</string>
     <string name="username">Username</string>
+    <string name="input_email">Please input your email!</string>
+    <string name="input_password">Please input your password!</string>
+    <string name="welcome_message">"Hey, Selamat Datang ! "</string>
 </resources>

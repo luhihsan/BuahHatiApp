@@ -63,7 +63,7 @@ class SignUpActivity : AppCompatActivity() {
             val email = binding.edRegisterEmail.text.toString()
             val password = binding.edRegisterPassword.text.toString()
             val username = binding.edRegisterUsername.text.toString()
-            viewModel.signup(name, email, password, username).observe(this) {
+            viewModel.signup(name, username, email, password).observe(this) {
                 if (it != null) {
                     when (it) {
                         is Result.Loading -> {
