@@ -83,6 +83,14 @@
                     android:layout_marginTop="16dp"
                     android:hint="@string/hint_tinggi_badan_cm"
                     android:inputType="numberDecimal" />
+
+                <EditText
+                    android:id="@+id/etLingkar_tumbuh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/hint_lingkar_cm"
+                    android:inputType="numberDecimal" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 

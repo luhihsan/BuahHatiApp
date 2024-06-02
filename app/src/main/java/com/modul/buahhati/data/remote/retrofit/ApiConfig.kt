@@ -21,7 +21,7 @@ object ApiConfig {
             .addInterceptor(authInterceptor)
             .build()
         val retrofit = Retrofit.Builder()
-            .baseUrl("http://34.136.188.57:5000")
+            .baseUrl("https://auth-capstone01-server.vercel.app")
             .addConverterFactory(GsonConverterFactory.create())
             .client(client)
             .build()

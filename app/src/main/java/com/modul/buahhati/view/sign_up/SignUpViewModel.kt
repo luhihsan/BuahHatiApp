@@ -6,6 +6,6 @@ import com.modul.buahhati.data.remote.repository.UserRepository
 class SignUpViewModel(
     private val userRepository: UserRepository
 ): ViewModel(){
-    fun signup(nameInput : String, emailInput : String, passwordInput:String) =
-        userRepository.register(nameInput, emailInput, passwordInput)
+    fun signup(nameInput : String, emailInput : String, passwordInput:String, usernameInput:String) =
+        userRepository.register(nameInput, emailInput, passwordInput, usernameInput)
 }

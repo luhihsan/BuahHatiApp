@@ -15,7 +15,7 @@
 
     <string name="app_name">BuahHati</string>
     <string name="title_signup_page">Sign Up</string>
-    <string name="name">Name\n</string>
+    <string name="name">Your Full Name\n</string>
     <string name="string_hint_name">Your Full Name</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
@@ -72,4 +72,9 @@
     <string name="tv_hasil_analisis">Hasil Analisis</string>
     <string name="tv_pantau_pertumbuhan">Pantau Pertumbuhan</string>
     <string name="judulChart">Hasil Analisis\n</string>
+    <string name="success">Success</string>
+    <string name="continue_message">Continue</string>
+    <string name="error_message">Error, there is something wrong</string>
+    <string name="hint_lingkar_cm">Lingkar Kepala(cm)</string>
+    <string name="username">Username</string>
 </resources>
