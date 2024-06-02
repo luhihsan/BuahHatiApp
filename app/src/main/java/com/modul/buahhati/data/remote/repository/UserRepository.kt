@@ -16,28 +16,16 @@ class UserRepository (
     private var loginPreference: LoginPreference
 ){
 
-    fun register(username: String, name: String, email: String, password: String): LiveData<Result<ErrorResponse>> =
+    fun register(name:String, email:String, password:String, username:String):LiveData<Result<ErrorResponse>> =
         liveData {
             emit(Result.Loading)
             try {
                 val response = apiService.register(name, email, password, username)
                 emit(Result.Success(response))
-            } catch (e: HttpException) {
-                val jsonInString = e.response()?.errorBody()?.string()
-                val errorMessage = try {
-                    val jsonElement = JsonParser().parse(jsonInString)
-                    if (jsonElement.isJsonObject) {
-                        val error = Gson().fromJson(jsonInString, ErrorResponse::class.java)
-                        error.message.toString()
-                    } else {
-                        jsonInString
-                    }
-                } catch (jsonEx: JsonSyntaxException) {
-                    jsonInString
-                } catch (illegalStateEx: IllegalStateException) {
-                    jsonInString
-                }
-                emit(Result.Error(errorMessage))
+            }catch (e : HttpException){
+                val json_inString = e.response()?.errorBody()?.string()
+                val error = Gson().fromJson(json_inString, ErrorResponse::class.java)
+                emit(Result.Error(error.message.toString()))
             } catch (e: Exception) {
                 emit(Result.Error(e.message.toString()))
             }
