@@ -80,4 +80,13 @@
     <string name="input_email">Please input your email!</string>
     <string name="input_password">Please input your password!</string>
     <string name="welcome_message">"Hey, Selamat Datang ! "</string>
+    <string name="title_menu_1">"Selamat Datang di Buah Hati "</string>
+    <string name="desc_menu_1">Aplikasi monitoring pertumbuhan Si Kecil yang mudah digunakan dan dapat dengan mudah diakses dimana saja dan kapan saja</string>
+    <string name="title_menu_2">Pantau Pertumbuhan Si Kecil Dengan Mudah</string>
+    <string name="desc_menu_2">Tidak perlu repot untuk memantau pertumbuhan Si Kecil. Cukup masukan data dan Buah Hati akan memperlihatkan kondisi pertumbuhannya.</string>
+    <string name="title_menu_3">Informasi Yang Mudah Dipahami</string>
+    <string name="desc_menu_3">Informasi pertumbuhan di tampilkan dalam bentuk grafik dan interpretasi hasil yang dapat dengan mudah dipahami. Anda tidak perlu bingung untuk membaca kondisi pertumbuhan Si Kecil</string>
+    <string name="title_menu_4">Dapatkan Saran Nutrisi</string>
+    <string name="desc_menu_4">Buah Hati juga memberikan rekomendari asupan nutrisi yang cocok untuk Si Kecil sesuai dengan kondisi pertumbuhannya.</string>
+    <string name="start_now">Start Now</string>
 </resources>
