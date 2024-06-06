@@ -20,7 +20,6 @@ class MainActivity : AppCompatActivity() {
 
         replaceFragment(HomeFragment(), "HomeFragment")
 
-
         binding.bottomNavigation.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.menu_1 -> {
