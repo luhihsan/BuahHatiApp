@@ -6,12 +6,13 @@ import androidx.lifecycle.ViewModelProvider
 import com.modul.buahhati.data.remote.LoginPreference
 import com.modul.buahhati.data.remote.repository.UserRepository
 import com.modul.buahhati.di.Injection
+import com.modul.buahhati.view.fragment.fragment_home.ProfileViewModel
 import com.modul.buahhati.view.login.LoginViewModel
 import com.modul.buahhati.view.sign_up.SignUpViewModel
 
 class ViewModelFactory(
     private val userRepository: UserRepository,
-    private val prereference : LoginPreference
+    private val preference : LoginPreference
 ):ViewModelProvider.NewInstanceFactory(){
 
     @Suppress("UNCHECK_CAST")
@@ -20,7 +21,10 @@ class ViewModelFactory(
             return SignUpViewModel(userRepository) as T
         }
         if (modelClass.isAssignableFrom(LoginViewModel::class.java)){
-            return LoginViewModel(userRepository,prereference) as T
+            return LoginViewModel(userRepository,preference) as T
+        }
+        if (modelClass.isAssignableFrom(ProfileViewModel::class.java)){
+            return ProfileViewModel(preference) as T
         }
         throw IllegalArgumentException("Unknown ViewModel class" + modelClass.name)
     }
